@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&family=Dancing+Script:wght@600&family=Diphylleia&family=Josefin+Sans:ital,wght@1,100&family=Merriweather:ital,wght@1,300&family=Montserrat:wght@200&family=Open+Sans:wght@300;500&family=Pangolin&family=Pathway+Extreme:wght@100&family=Poppins:wght@900&family=Rubik+Iso&family=Trochut&family=Ubuntu&family=Young+Serif&family=Ysabeau+SC:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(to right, skyblue, white, skyblue);
+}
+
+.h1 {
+    color: rgb(4, 71, 4);
+    text-align: center;
+    font-family: 'Young Serif', serif;
+    padding-top: 155px;
+}
+
+#form {
+    display: flex;
+    margin:60px auto;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    height: 80px;
+    align-items: center;
+}
+
+#form input {
+    width: 67%;
+    /* height: 37px; */
+    padding: 15px;
+    font-size: 17px;
+    color: black;
+    background: rgb(154, 175, 223);
+    display: block;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    margin-top: 15px;
+} 
+
+::placeholder {
+    color: black;
+}
+
+#search-btn {
+    width: 17%;
+    padding: 7px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 14px;
+    font-size: 13px;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(69, 104, 184);
+    cursor: pointer;
+    font-family: 'Young Serif', serif;
+    color: white;
+}
+
+@media screen and(max-width:328) {
+    #search-btn {
+        padding: 5px;
+        font-size: 9;
+    }
+    #form input {
+        width: 55%;
+    }
+    
+}
+
+#search-btn:active {
+    background-color: rgb(142, 142, 142);
+}
+
+#showMore {
+    width: 9%;
+    height: 50px;
+    background-color: rgb(76, 113, 200);
+    display: none;
+    margin: auto;
+    border-radius: 8px;
+    outline: 0;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 40px;
+    color: white;
+
+}
+#showMore:active {
+    background-color: rgb(142, 142, 142)
+
+}
+
+#searchResult {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+#searchResult img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-top: 50px;
+}
